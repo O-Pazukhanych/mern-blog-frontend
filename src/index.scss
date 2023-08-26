@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5 !important;
+}
+
+.grid-container{
+	@media (max-width: 769px) {
+		flex-direction: column-reverse !important;
+	}
+}
+
+.grid-item{
+	&__tags-block {
+		@media (max-width: 769px) {
+			max-width: 100% !important;
+			margin-bottom: -32px !important;
+		}
+	}
+	&__posts-block {
+		@media (max-width: 769px) {
+			max-width: 100% !important;
+		}
+	}
+}
+
+.tags-list {
+	@media (max-width: 769px) {
+		display: flex !important;
+	}
+	@media (max-width: 769px) {
+		flex-wrap: wrap !important;
+	}
+}
+
+.tag-icon {
+	@media (max-width: 769px) {
+		min-width: 0px !important;
+	}
+}
+
+.tabs {
+	@media (max-width: 769px) {
+		margin-top: -30px !important;
+	}
+}
